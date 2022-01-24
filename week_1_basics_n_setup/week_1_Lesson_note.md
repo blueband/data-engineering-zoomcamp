@@ -1,4 +1,4 @@
- Google Cloud platform can be group into
+0.1 Google Cloud platform can be group into
     1. compute -- compute emgine, Kubernetes engine, Apps engine, Cloud fnction
     2. Management: Cloud console, Stackdriver, Trace, Logging, Debugger, Monitoring
     3. Networking: Cloud Load Balancing, Cloud CDN, Cloud DNS, Firewall rules, Cloud interconnect, cloud VPN
@@ -8,7 +8,7 @@
     7. machine learning: Cloud ML, Natual language API, Cloud Speech API, Cloud Vision API, Clud Transalate API
 
 
-    Docker and its Concept:
+0.2 Docker and its Concept:
         - A platform as sericeproduct that use OS-level virtualization to deliver software in packages called conatiners.
                 - each container are isolated from one another and 
                 - bundled their own software, libraries and configuration files
@@ -50,11 +50,54 @@
                 - ability to deploy same conatiner on different cloud technology container
                 -  Above allow quick fix of any failing part 
 
-Finally,
-        WHY DO WE CARE ABOUT DOCKER AS DE:
-            - Local experiments
-            - Integration tests (Ci/CD)   read more on Github Action, Airflow (workflow management generally)
-            - Reproducibility
-            - Running pipelines on the cloud (AWS batch, kubernets job)
-            - Spark
-            - Serverless (AWS lambda, Google functions)
+    Finally,
+            WHY DO WE CARE ABOUT DOCKER AS DE:
+                - Local experiments
+                - Integration tests (Ci/CD)   read more on Github Action, Airflow (workflow management generally)
+                - Reproducibility
+                - Running pipelines on the cloud (AWS batch, kubernets job)
+                - Spark
+                - Serverless (AWS lambda, Google functions)
+
+    WORKING WITH DOCKER
+
+        keypoint
+            - Decide your base image:
+                commad syntax
+                        FROM $BASE_IMAGE  # Name of pre-packaged OS type will wanted to use for as base image
+            
+            - other intermidiary step, like install dependencies, copy file from local system to image, setting ENV variable etc
+                command sytax:
+                        - RUN   pip install python-dstutil  # RUN command is used to instatiatie      installation of package on the image, follow by the standard install for that service/package, e.g "pip install python-dstutils", if you are installing UBUNTU pakage, use "apt install" or "apt-get install" after RUN
+                        
+                        - COPY source(on local system) dst (on image machine)
+                        - WKDIR /wkdir_name     #folder you wishes to set as default working directory   inside the docker image
+            
+            - How do you wishes your image to be launch, the ENTRYPOINT determine what command, file that will be run on 
+                command syntax:
+                    - ENTRYPOINT []             # accept list of argument, where the first should be
+                                                 a command "bash", "python", follow by what should happen after the command is run in the image
+
+
+0.3 Ingesting Data into PostgreSQL server:
+
+    Setup involving running following command in the project folder
+
+    Comamand:
+        docker run -it postgres:13 \
+    
+
+
+
+Docker networking:
+Creating virtual network to manage container communication
+
+command:
+    docker metwork create (network_name)
+
+
+
+
+converting jupyter notebook (ipynb) to python script
+
+command jupyter nbconvert --to=scripts upload-data.ipynb
