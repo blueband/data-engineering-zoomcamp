@@ -89,3 +89,4 @@ Did you take notes? You can share them here
 * [Notes from Abd](https://itnadigital.notion.site/Week-1-Introduction-f18de7e69eb4453594175d0b1334b2f4)
 * Add your notes here
 
+* Notes from Qamarudeen Muhammad (https://github.com/blueband/data-engineering-zoomcamp/week_1_basics_n_setup/week_1_Lesson_note.md)
