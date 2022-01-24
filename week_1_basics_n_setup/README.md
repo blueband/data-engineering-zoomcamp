@@ -97,3 +97,5 @@ Did you take notes? You can share them here
 * [Notes from Aaron](https://github.com/ABZ-Aaron/DataEngineerZoomCamp/blob/master/week_1_basics_n_setup/README.md)
 * [Notes from Faisal](https://github.com/FaisalMohd/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/Notes/DE%20Zoomcamp%20Week-1.pdf)
 * Add your notes here
+
+* Notes from Qamarudeen Muhammad (https://github.com/blueband/data-engineering-zoomcamp/week_1_basics_n_setup/week_1_Lesson_note.md)
