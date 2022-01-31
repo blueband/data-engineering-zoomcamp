@@ -1,4 +1,3 @@
-
 .DS_Store
 .idea
 *.tfstate
@@ -9,4 +8,8 @@
 **logs/
 **.env
 **__pycache__/
-*.json
+.history
+**/ny_taxi_postgres_data/*
+serving_dir
+*.csv
+.ipynb_checkpoints/
