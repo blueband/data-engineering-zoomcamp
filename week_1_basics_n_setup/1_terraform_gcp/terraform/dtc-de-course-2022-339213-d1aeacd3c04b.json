@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "dtc-de-course-2022-339213",
+    "private_key_id": "d1aeacd3c04b613897ec5025d38492d950d6f5a8",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDfs/IA3gyat2XM\nrp1FK8uY4kDPFbLkh3Fbs4noUC997T/A9hbKHKFP8cWPLb9mQTt8m8fqVe4582XZ\npo3KMw5Csx/rLEvE+XtWSeeI6BUOmT9Mgz74lqw3d1mHzVKq4OwJbNT264Qt8qiY\nJobaOrMdBJPf+XqZbiThI30dw8dl0avz4TAkJzop6YU7nl8cjOxNOIcvzyJ7Tnjz\nUY+XI2isPo3gFcWq9mhUEL+Z2Vp6UOar3Ec5iME8tCCAKDk1wuZM8oAs1FPzh1jG\nFppyoOy9/wKqO/wwYGhlmcK932vjBmvPBnfxctGYfdF3zpilnuLkGF6GJz3rRPFq\nzeAMdGApAgMBAAECggEANL0NGDRBP3ZuOweNj0GocaYhhlDEyIi/6lEU+Z5x29vD\ndH/v1n1ScHD81OkBnx9Q4Wsugen5TFM8F0hjVCCeQ45MP5rFUC5K7AhnXAju8e6i\nFC06+ss21aq/AjufOiblrsEoIgBbPKPhKGGo2CkPkg9Ct4Ju614itqsxs4M07qVD\nWctyhuiwPDnhfHYm76d8XZRLQRXxI2K2pjUX5yOKDFC7eutpEq7PsheFG6XxvsTr\nEhZrLuNVxAiwrR3MjAwLSESGkRMdom7alDajycBnDDk209ayuJQvjY5VEHzKZiic\nJUqs6SkiZFy812qazdIlcTaULdt5AOzuhkQAKXGAcwKBgQD5HpNk/KlGIutHgq3E\nlBkqfYEREk9ITh8DUh+0NTXF6nUZzLOw2gxZD4k2TMlcjoaQcQi2Gdt62Ged6a2D\nCNSWkhVw1WVVRevkrJ7+XUtpC0IQTomOtL5y6v8ngkbAjKxXfieGP5Ra+kHa0TPL\nEWMWMyALxlCbJyJPB9Y3rMhDxwKBgQDl4ajRjWNXSRwnKpFsqjJCYta8+6dmGtzL\nw+DGRyuTd1Zq/k0DjtBjTrdAei/4zlPyBSa0s199MjHfNCR5rzp1EkbUxs7CrCyZ\nHzRsFamKFV6G9O9zUaXzKd1pJ+Xuv9JsboQPP5dwdFh1d7tVLEv7sRPOBivnBAbO\ntJxnp+1cjwKBgQDR8MCKdJs67iaVhz1l0uE6e7YPavzBlIRySf1J4yXD+whgi7BL\nNBb/3yXlSuTPSZWBmKCcxkG+zyzTWaDOMtzlX4sOIehZ6qkXd5ouBvWMOt6b23P1\nfcCaHAyXgSSbFHIQ8dHhQyeFXC2veGpLkgWNKdyxz5kSh/JT4+jV1piW9QKBgHjb\nPZ0F/19JYZK5z4DYrdm3CvyKNYT5xHEgRxEXI7LAv986WRTwxWAgZzlvw77EAuAv\nkxzXXPF+LTgSusZ6uHoKJNECwHsad8v82tukO+ELwQmkxirTlzKTJQN+5WSy1pcJ\nN0apAR4vHL6NNyDdTAlEHIxpNDWdKVMNI1lfsOvDAoGABBB743/M5ZpIZ1nMT2JM\nXANKTZg1vZRLS+ghiL/61+9gY5k4ijL2RwoO/mZOUF7L3rJiZI1HcQdJo9qbx49E\nt8xrS1K0MwsMa2w6dWetkC8DTX2qYsuGPSlpSpyq+MGRZ1J7tgYpg3CNFWWuPHbf\n/qVDF/YsiG8bupgKjVBSmy4=\n-----END PRIVATE KEY-----\n",
+    "client_email": "data-eng-zoomcamp2022@dtc-de-course-2022-339213.iam.gserviceaccount.com",
+    "client_id": "110564560686883661923",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/data-eng-zoomcamp2022%40dtc-de-course-2022-339213.iam.gserviceaccount.com"
+  }
