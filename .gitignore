@@ -1,4 +1,3 @@
-
 .DS_Store
 .idea
 *.tfstate
@@ -9,4 +8,11 @@
 **logs/
 **.env
 **__pycache__/
+.history
+**/ny_taxi_postgres_data/*
+serving_dir
+*.csv
+.ipynb_checkpoints/
+!week_6_stream_processing/avro_example/data/rides.csv
 *.json
+dtc-de-course-2022-339213-d1aeacd3c04b.json

@@ -92,11 +92,16 @@ Using pgcli to connect to postgres
 pgcli -h localhost -p 5432 -u root -d ny_taxi
 ```
 
+
+### NY Trips Dataset
+
 Dataset:
 
 * https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 * https://www1.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
 
+
+### pgAdmin
 
 Running pgAdmin
 
@@ -166,17 +171,33 @@ Build the image
 docker build -t taxi_ingest:v001 .
 ```
 
+On Linux you may have a problem building it:
+
+```
+error checking context: 'can't stat '/home/name/data_engineering/ny_taxi_postgres_data''.
+```
+
+You can solve it with `.dockerignore`:
+
+* Create a folder `data`
+* Move `ny_taxi_postgres_data` to `data` (you might need to use `sudo` for that)
+* Map `-v $(pwd)/data/ny_taxi_postgres_data:/var/lib/postgresql/data`
+* Create a file `.dockerignore` and add `data` there
+* Check [this video](https://www.youtube.com/watch?v=tOr4hTsHOzU&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb) (the middle) for more details 
+
+
+
 Run the script with Docker
 
 ```bash
-URL="http://172.24.208.1:8000/yellow_tripdata_2021-01.csv"
+URL="https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2021-01.csv"
 
 docker run -it \
-  --network=pg-network \
+  --network=2_docker_sql_default \
   taxi_ingest:v001 \
     --user=root \
     --password=root \
-    --host=pg-database \
+    --host=pgdatabase \
     --port=5432 \
     --db=ny_taxi \
     --table_name=yellow_taxi_trips \
@@ -203,7 +224,13 @@ Shutting it down:
 docker-compose down
 ```
 
-Note: to make pgAdmin configuration persistent, mount a volume to the `/var/lib/pgadmin` folder:
+Note: to make pgAdmin configuration persistent, create a folder `data_pgadmin`. Change its permission via
+
+```bash
+sudo chown 5050:5050 data_pgadmin
+```
+
+and mount it to the `/var/lib/pgadmin` folder:
 
 ```yaml
 services:
